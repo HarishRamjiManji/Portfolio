@@ -26,19 +26,12 @@ const Projects = () => {
   return (
     <div id="projects">
       <div className="project-container">
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
         <h1 className="pgtitle">PROJECTS</h1>
 
         {/* Residential Projects */}
         <div className="project-category">
           <h2 className="pgtitle">Residential Developments 🏠</h2>
-          <div className="project-list">
+          <div className="grid-container1">
             {residentialProjects.map((project, index) => (
               <div key={index} className="project-card">
                 <p className="boxplan"><strong>{project.name}</strong></p>
@@ -47,8 +40,6 @@ const Projects = () => {
                 <Link to={`/projects/${project.path}`}>
                   <button className="project-button">Go to Project</button>
                 </Link>
-                <br></br>
-                <hr></hr>
               </div>
             ))}
           </div>
@@ -57,7 +48,7 @@ const Projects = () => {
         {/* Commercial Projects */}
         <div className="project-category">
           <h2 className="pgtitle">Commercial & Industrial Projects 🏢</h2>
-          <div className="project-list">
+          <div className="grid-container1">
             {commercialProjects.map((project, index) => (
               <div key={index} className="project-card">
                 <p className="boxplan"><strong>{project.name}</strong></p>
@@ -66,9 +57,6 @@ const Projects = () => {
                 <Link to={`/projects/${project.path}`}>
                   <button className="project-button">Go to Project</button>
                 </Link>
-                
-                <br></br>
-                <hr></hr>
               </div>
             ))}
           </div>
@@ -77,7 +65,7 @@ const Projects = () => {
         {/* Specialty Projects */}
         <div className="project-category">
           <h2 className="pgtitle">Specialty & Institutional Projects ⛪</h2>
-          <div className="project-list">
+          <div className="grid-container1">
             {specialtyProjects.map((project, index) => (
               <div key={index} className="project-card">
                 <p className="boxplan"><strong>{project.name}</strong></p>
@@ -86,9 +74,6 @@ const Projects = () => {
                 <Link to={`/projects/${project.path}`}>
                   <button className="project-button">Go to Project</button>
                 </Link>
-                
-                <br></br>
-                <hr></hr>
               </div>
             ))}
           </div>

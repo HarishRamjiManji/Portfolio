@@ -1,30 +1,31 @@
 const MeetTheTeam = () => {
   return (
-    <div id="meet-the-team" className="column">
+    <section id="meet-the-team" className="team-container">
       <br></br>
       <br></br>
+      
+      <h2 className="pgtitle">MEET THE TEAMS</h2>
       <br></br>
-      <h2 className="pgtitle">Meet the Team</h2>
-      <div className="row">
-        <div className="box1 ">
-          <img src="rs/pics/dad.jpeg" alt="Director" className="pic1" />
+      <br></br>
+      <div className="team-grid">
+        <div className="team-member">
+          <img src="rs/pics/dad.jpeg" alt="Director" className="team-pic" />
           <h3 className="redtitle">Harish Ramji</h3>
-          <p className="boxplan"><b>Civil Engineer/Entrepreneur</b></p>
-          <p classNam e="box">Harish began this company to follow his dreams<br></br>and Build
-          magnificent pieces of art  </p>
+          <p className="team-role"><b>Director / Entrepreneur</b></p>
+          <p className="team-desc">
+            Harish founded this company to follow his dreams and build magnificent pieces of art.
+          </p>
         </div>
-        <br></br>
-
-        <div className="box1">
-          <img src="rs/pics/mum1.jpg" alt="Co-Director" className="pic1" />
+        <div className="team-member">
+          <img src="rs/pics/mum1.jpg" alt="Co-Director" className="team-pic" />
           <h3 className="redtitle">Pushpa Harish Ramji</h3>
-          <p className="boxplan"><b>Co-Director</b></p>
-          <p className="box">Pushpa is a qualified teacher and handles the accounting and administration of 
-            the company.
+          <p className="team-role"><b>Co-Director</b></p>
+          <p className="team-desc">
+            Pushpa is a qualified teacher who manages the company's accounting and administration.
           </p>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

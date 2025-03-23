@@ -8,11 +8,11 @@ const Home = () => (
     </div>
     <div className="titleme">
       <h1>HARISH RAMJI </h1>
-      <h2>CIVIL ENGINEER/PROJECT MANAGER</h2>
+      <h2>DIRECTOR/PROJECT MANAGER</h2>
     </div>
     <div className="infohome">
       <p>
-      With over a decade of experience in the construction industry, I am a dedicated project 
+      With over TWO decades of experience in the construction industry, I am a dedicated project 
       manager with a passion for delivering high-quality, efficient, and innovative building 
       solutions.
       <br></br> From residential homes to large-scale commercial projects, 

@@ -6,6 +6,11 @@
 #home {
   color: blue;
 }
+html, body {
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
 
 /* Text color for Projects page */
 #projects {
@@ -58,6 +63,28 @@
 
           
     }
+
+
+/* footer styling on all pages */
+
+.footer{
+  text-align: center;
+  background-color:   #ffffff;
+  color:  #000000;
+  backdrop-filter: blur(100px);
+  z-index: 1;
+  margin-bottom: 0px;
+  border-top: solid;
+  opacity: 0.8;
+}
+
+
+.footer_icons {
+  margin-top: 5px;
+  display: inline-block; /* Ensure content aligns horizontally */
+  align-items: center;
+}
+
 
 /* Style the top navigation text links on the right */
 
@@ -249,13 +276,16 @@ button:hover {
       margin-top: 25px;
     }
     .left{
-      width: 60%;
+      width: 50%;
+      flex-direction: column;
+      
     }
     .right{
-      width: 40%;
-      display: flex; /* Ensures proper alignment for content inside the right section */
-      justify-content: center; /* Centers content horizontally in the right section */
+      width: 50%;
+      display: flex; 
+      justify-content: center; 
       align-items: center;
+      flex-direction: column;
       
     }
 
@@ -273,11 +303,22 @@ button:hover {
       background-color:rgb(238 238 238 /80%); 
       height: auto ;
       border-radius: 15px;
-      padding: 10px 10px;
+      padding: 15px 10px;
       text-align: center;
+      margin: 10px 10px;
 
     }
-
+    .box, .box1, .boxskills {
+      max-width: 80%; /* Adjust width as needed */
+      width: fit-content;
+      margin: 0 auto; /* Centers the element horizontally */
+      display: flex; /* Enables flexbox */
+      flex-direction: column; /* Ensures contents are stacked properly */
+      align-items: center; /* Centers content inside */
+      justify-content: center; /* Ensures proper centering */
+  }
+  
+    
 /* links inside the box have the color grey */
     .boxplan b{
         color: #008080;
@@ -330,8 +371,103 @@ button:hover {
     .row {
       display: flex; /* Use flexbox for better layout control */
       flex-direction: column; /* Stack columns vertically */
-      gap: 5px; /* Add spacing between rows */
+      gap: 5px; /* Add spacing between  */
     }
+
+/* Meet The Team Section */
+.team-container {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-member {
+  background: rgba(154, 153, 153, 0.25);
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+}
+
+.team-pic {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+.team-role {
+  font-size: 18px;
+  font-weight: bold;
+  color: #008080;
+}
+
+.team-desc {
+  color: #5a5a5a;
+  font-size: 16px;
+}
+.about-us-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 140px 20px;
+  position: relative;
+}
+.timeline {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  width: 80%;
+  max-width: 1200px;
+  margin: auto;
+  gap: 20px; /* Space between columns */
+}
+
+.box {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  max-width: 600px;
+}
+
+.box.left {
+  grid-column: 1 / 2; /* Place it in the left column */
+  width: 45%;
+  margin-left: auto; /* Align it towards the right of its column */
+}
+
+.box.right {
+  grid-column: 2 / 3; /* Place it in the right column */
+  width: 45%;
+  margin-right: auto; /* Align it towards the left of its column */
+}
+
+@media (max-width: 768px) {
+  .timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box.left,
+  .box.right {
+    width: 100%; /* Full width on small screens */
+    max-width: 600px;
+  }
+}
+
+.redtitle {
+  color: red;
+  text-align: center;
+}
 
 
 
@@ -395,25 +531,6 @@ button:hover {
     }
 
 
-/* footer styling on all pages */
-
-    .footer{
-      text-align: center;
-      background-color:   #ffffff;
-      color:  #000000;
-      
-      margin-bottom: 0px;
-      border-top: solid;
-      opacity: 0.8;
-    }
-
-    
-    .footer_icons {
-      margin-top: 5px;
-      display: inline-block; /* Ensure content aligns horizontally */
-      align-items: center;
-  }
-
 
 /* styling on all pictures of reference page */
 
@@ -451,14 +568,16 @@ button:hover {
       justify-content: center; /* Center content */
       gap: 20px; /* Space between items */
       min-height: 450px;
+      width: 100%;
+      max-width: 100%;
     }
     .icon-container .icon {
-      flex: 1 1 calc(100% / 8 - 20px); /* Each icon takes up space for 8 items per row */
-      max-width: calc(100% / 8 - 20px); /* Adjust size for exact 8 icons per row */
+      flex: 1 1 calc(100% / 8 - 20px); 
+      max-width: calc(100% / 8 - 20px); 
     }
     
     .icon:nth-child(n+9) {
-      flex: 1 1 calc(100% / 7 - 20px); /* For the 9th icon onwards, adjust for 7 items per row */
+      flex: 1 1 calc(100% / 7 - 20px); /* For the 9th icon onwards, adjust for 7 items per  */
       max-width: calc(100% / 7 - 20px);
     }
     .education-item {
@@ -499,12 +618,13 @@ button:hover {
     }
     
     .project-category {
-      width: 80%; /* Adjust width as needed */
-      max-width: 600px; /* Prevents it from being too wide on large screens */
+      width: 95%; /* Adjust width as needed */
+      max-width: 1600px; /* Prevents it from being too wide on large screens */
+      
       background-color: #ffffff;
       padding: 20px;
       margin: 10px 0;
-      border-radius: 10px;
+      border-radius: 50px;
       box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
     }
     
@@ -517,17 +637,14 @@ button:hover {
       margin: 5px 0;
     }
     
-    .about-us-container {
-      position: relative;
-
-      margin: 0;
-    }
+    
     
     .about-us-background {
       position: absolute;
       width: 100%;
       height: 100%;
-      background: url('/public/rs/pics/bg1.jpg') no-repeat center center/cover;
+      opacity: 75%;
+      background: url('/public/rs/pics/brick.jpg') no-repeat center center/cover;
       background-blend-mode: multiply;
       z-index: -1; /* Ensure the background is behind the content */
     }
@@ -605,8 +722,107 @@ button:hover {
       background-color: #0056b3;
       transform: scale(1.05);
     }
-    
 
+    .tilteaboutus{
+      text-align: center;
+      color: #008080; 
+      font-size: 45px; 
+      position: absolute;
+      top: 10%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1; 
+    }
+
+    .about-us-container {
+      
+      background-size: cover;
+      background-position: center;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+    
+    .grid-container {
+      margin-top: 20%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* 2 columns */
+      grid-template-rows: repeat(4, 1fr);    /* 4 rows */
+      gap: 20px;
+      padding: 20px;
+      width: 100%;
+      max-width: 1200px; /* Optional: set a max width for the grid container */
+      justify-content: center; /* Center the grid horizontally */
+      align-items: center;     /* Center the grid vertically */
+    }
+    .grid-container1 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* 4 columns for all categories */
+      gap: 40px;
+      padding: 20px;
+      width: 100%;
+      max-width: 1800px; /* Optional: set a max width for the grid container */
+    }
+    .project-card {
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background for the boxes */
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 200px;
+    } 
+    .grid-item {
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background for the boxes */
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column; /* Ensure the content stacks vertically */
+      justify-content: space-between; /* Align the content evenly within each box */
+      min-height: 200px; /* Make the boxes taller and rectangular */
+    }
+    
+    .history {
+      grid-column: 1 / 2; /* Column 1 */
+      grid-row: 1 / 2;    /* Row 1 */
+    }
+    
+    .mission {
+      grid-column: 2 / 3; /* Column 2 */
+      grid-row: 2 / 3;    /* Row 2 */
+    }
+    
+    .vision {
+      grid-column: 1 / 2; /* Column 1 */
+      grid-row: 3 / 4;    /* Row 3 */
+    }
+    
+    .future {
+      grid-column: 2 / 3; /* Column 2 */
+      grid-row: 4 / 5;    /* Row 4 */
+    }
+    
+    .redtitle {
+      color: #d32f2f; /* Adjust to your preferred color for titles */
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    
+    h2 {
+      color: #333;
+    }
+    
+    p {
+      color: #555;
+      font-size: 16px;
+      line-height: 1.6;
+      
+    }
+    
 
 
 
