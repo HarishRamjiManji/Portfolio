@@ -1,16 +1,13 @@
-// src/App.js
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { HashRouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom"; // Use HashRouter for GitHub Pages
 
 import Header from "./Header";
 import Home from "../Pages/Home";
 import Projects from "../Pages/Projects";
-import Team from "../Pages/Team"
+import Team from "../Pages/Team";
 import Footer from "./Footer";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import AboutUs from "../Pages/About_Us";
-
 
 // Import all individual project pages
 import BungalowNyari from "../Pages/Subprojects/BungalowNyari";
@@ -26,18 +23,18 @@ import WarehouseRuaraka from "../Pages/Subprojects/WarehouseRuaraka";
 import WarehouseRuarakaSingle from "../Pages/Subprojects/WarehouseRuarakaSingle";
 import WaridiHouse from "../Pages/Subprojects/WaridiHouse";
 
-
 function App() {
   return (
     <Router>
       <Header /> {/* Navbar remains visible on all pages */}
       <Routes>
+        {/* ✅ Default route ensures the homepage loads first */}
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/skills" element={<Team />} />
         <Route path="/about_us" element={<AboutUs />} />
 
-          {/* Routes for individual projects */}
+        {/* ✅ Routes for individual projects */}
         <Route path="/projects/bungalow-nyari" element={<BungalowNyari />} />
         <Route path="/projects/church-chumvi" element={<ChurchChumvi />} />
         <Route path="/projects/executive-flats-city-park" element={<ExecutiveFlatsCityPark />} />

@@ -6,7 +6,7 @@ const Header = () => (
   <div className="header">
     <div className="topnav">
       {/* Social links */}
-      <a href="mailto:harinharish2002@gmail.com" className="leftlink">
+      <a href="mailto:harinbuildersltd@gmail.com" className="leftlink">
         <img src="rs/icons/gmail-svgrepo-com.png" alt="GMail" className="imgs2" />
       </a>
       <a href="https://www.linkedin.com/in/harish-ramji-manji-65b82373/" className="leftlink">

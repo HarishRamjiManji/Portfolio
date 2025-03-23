@@ -4,11 +4,9 @@ import React from "react";
 const Footer = () => (
   <footer>
     <div className="footer">
-      <p>
-        COPYRIGHT<sup>&copy;</sup> HARIN RAMJI 2025.
-        </p>
+      
         <div className="footer_icons">
-          <a href="mailto:harinharish2002@gmail.com" className="leftlink">
+          <a href="mailto:harinbuildersltd@gmail.com" className="leftlink">
           <img src="rs/icons/gmail-svgrepo-com.png" alt="GMail" className="imgs3" />
           </a>
           <a href="https://www.linkedin.com/in/harish-ramji-manji-65b82373/" className="leftlink">
@@ -18,6 +16,9 @@ const Footer = () => (
           <img src="rs/icons/git.jpg" alt="GitHub" className="imgs3" />
           </a>
       </div>
+      <p>
+        COPYRIGHT<sup>&copy;</sup> HARIN RAMJI 2025.
+        </p>
       
     </div>
   </footer>
