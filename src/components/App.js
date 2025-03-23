@@ -1,5 +1,6 @@
 import React from "react";
 import { HashRouter as Router, Routes, Route } from "react-router-dom"; // Use HashRouter for GitHub Pages
+//import { BrowserRouter as Router,Routes,Route } from "react-router-dom";
 
 import Header from "./Header";
 import Home from "../Pages/Home";
