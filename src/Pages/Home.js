@@ -4,7 +4,7 @@ import React from "react";
 const Home = () => (
   <div id="home">
     <div className="picdiv">
-      <img src="/rs/pics/dad.jpeg" className="pic1" alt="Profile Pic" />
+      <img src="rs/pics/dad.jpeg" className="pic1" alt="Profile Pic" />
     </div>
     <div className="titleme">
       <h1>HARISH RAMJI </h1>
