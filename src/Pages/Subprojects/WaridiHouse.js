@@ -13,7 +13,9 @@ const WaridiHouse = () => {
       <h1>Waridi House (6-Story Office Block)</h1>
       <p><strong>Location:</strong> Butere Road, Nairobi</p>
       <p><strong>Year:</strong> Completed 2014</p>
-      <p>Additional details about this project go here.</p>
+      <p>A modern office complex designed for corporate and commercial use.<br></br>
+      Features include high-speed elevators, ample parking, and energy-efficient systems.<br></br>
+      Strategically located on Butere Road, providing easy access to Nairobi’s business district.</p>
       
       <button onClick={() => navigate(-1)} className="back-button">
         Back to Projects

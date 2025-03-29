@@ -13,7 +13,8 @@ const WarehouseRuarakaSingle = () => {
       <h1>1 Warehouse</h1>
       <p><strong>Location:</strong> Ruaraka, Nairobi</p>
       <p><strong>Year:</strong> 2010</p>
-      <p>Additional details about this project go here.</p>
+      <p>A stand-alone warehouse offering efficient storage solutions with easy transport access.<br></br>
+      Designed for bulk storage with a durable structural framework.</p>
       
       <button onClick={() => navigate(-1)} className="back-button">
         Back to Projects

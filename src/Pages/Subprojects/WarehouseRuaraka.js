@@ -13,7 +13,8 @@ const WarehouseRuaraka = () => {
       <h1>Warehouse & Office Block</h1>
       <p><strong>Location:</strong> Ruaraka</p>
       <p><strong>Year:</strong> 2011 (Completed in 8 Months)</p>
-      <p>Additional details about this project go here.</p>
+      <p>A multipurpose facility combining warehousing and office space for businesses.<br></br>
+      Constructed within a tight deadline of 8 months to meet operational demands.</p>
       
       <button onClick={() => navigate(-1)} className="back-button">
         Back to Projects

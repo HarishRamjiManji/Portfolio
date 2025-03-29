@@ -13,7 +13,8 @@ const WarehousesChangamwe = () => {
       <h1>9 Warehouses</h1>
       <p><strong>Location:</strong> Changamwe Road, Nairobi</p>
       <p><strong>Year:</strong> 2007 – 2009</p>
-      <p>Additional details about this project go here.</p>
+      <p>Large storage spaces built for logistics, manufacturing, and distribution businesses.<br></br>
+      Features include loading docks, high ceilings, and secure gated access.</p>
       
       <button onClick={() => navigate(-1)} className="back-button">
         Back to Projects

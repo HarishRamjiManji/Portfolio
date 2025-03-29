@@ -13,7 +13,8 @@ const ResidentialFlatsWanyee = () => {
       <h1>40 Residential Flats</h1>
       <p><strong>Location:</strong> Wanyee Road, Nairobi</p>
       <p><strong>Year:</strong> 2009 – 2011</p>
-      <p>Additional details about this project go here.</p>
+      <p>A mix of one, two, and three-bedroom apartments designed for urban living.<br></br>Located 
+      near key infrastructure, offering convenience and accessibility.</p>
       
       <button onClick={() => navigate(-1)} className="back-button">
         Back to Projects

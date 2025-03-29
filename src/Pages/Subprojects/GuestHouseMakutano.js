@@ -13,7 +13,8 @@ const GuestHouseMakutano = () => {
       <h1>Guest House</h1>
       <p><strong>Location:</strong> Makutano, Kyumbi, Machakos</p>
       <p><strong>Year:</strong> Completed 2017</p>
-      <p>Additional details about this project go here.</p>
+      <p>A serene and well-designed guest house catering to travelers and visitors in Makutano.<br></br>
+Features modern architecture, spacious rooms, and comfortable amenities for guests.</p>
       
       <button onClick={() => navigate(-1)} className="back-button">
         Back to Projects
