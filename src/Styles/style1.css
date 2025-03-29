@@ -164,6 +164,21 @@ html, body {
       border-radius: 15px;
       
     }
+    .pgtitle1{
+     
+      text-align: center;
+      color:#000000;
+      background-color: #ffffff;
+      border-radius: 25px;
+      font-size:70px ;
+      padding: 10px;
+      
+      margin: 0 auto; /* Horizontally centers the element */
+    display: block; /* Ensures it's treated as a block element */
+    width: fit-content; /* Adjusts width to fit content */
+      border-radius: 15px;
+      
+    }
     :target {
       scroll-margin-top: 60px; /* Matches the height of your fixed header */
   }

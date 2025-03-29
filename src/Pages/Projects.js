@@ -26,7 +26,7 @@ const Projects = () => {
   return (
     <div id="projects">
       <div className="project-container">
-        <h1 className="pgtitle">PROJECTS</h1>
+        <h1 className="pgtitle1">PROJECTS</h1>
 
         {/* Residential Projects */}
         <div className="project-category">

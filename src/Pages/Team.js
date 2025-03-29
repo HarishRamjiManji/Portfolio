@@ -4,7 +4,7 @@ const MeetTheTeam = () => {
       <br></br>
       <br></br>
       
-      <h2 className="pgtitle">MEET THE TEAMS</h2>
+      <h2 className="pgtitle1">MEET THE TEAM</h2>
       <br></br>
       <br></br>
       <div className="team-grid">
