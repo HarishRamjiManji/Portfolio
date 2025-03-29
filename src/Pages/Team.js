@@ -7,9 +7,10 @@ const MeetTheTeam = () => {
       <h2 className="pgtitle1">MEET THE TEAM</h2>
       <br></br>
       <br></br>
+      
       <div className="team-grid">
         <div className="team-member">
-          <img src="rs/pics/dad.jpeg" alt="Director" className="team-pic" />
+          <img src="/rs/pics/dad.jpeg" alt="Director" className="team-pic" />
           <h3 className="redtitle">Harish Ramji</h3>
           <p className="team-role"><b>Director / Entrepreneur</b></p>
           <p className="team-desc">
@@ -17,7 +18,7 @@ const MeetTheTeam = () => {
           </p>
         </div>
         <div className="team-member">
-          <img src="rs/pics/mum1.jpg" alt="Co-Director" className="team-pic" />
+          <img src="/rs/pics/mum1.jpg" alt="Co-Director" className="team-pic" />
           <h3 className="redtitle">Pushpa Harish Ramji</h3>
           <p className="team-role"><b>Co-Director</b></p>
           <p className="team-desc">
