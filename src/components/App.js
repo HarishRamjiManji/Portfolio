@@ -1,5 +1,5 @@
 import React from "react";
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as  Routes, Route } from "react-router-dom";
 
 import Header from "./Header";
 import Home from "../Pages/Home";
@@ -25,7 +25,7 @@ import WaridiHouse from "../Pages/Subprojects/WaridiHouse";
 
 function App() {
   return (
-    <Router>
+    <>
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -46,7 +46,7 @@ function App() {
         <Route path="/projects/waridi-house" element={<WaridiHouse />} />
       </Routes>
       <Footer />
-    </Router>
+    </>
   );
 }
 
