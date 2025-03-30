@@ -1,7 +1,5 @@
 import React from "react";
-import { HashRouter as Router, Routes, Route } from "react-router-dom"; // Use HashRouter for GitHub Pages
-//import { BrowserRouter as Router,Routes,Route } from "react-router-dom";
-//import { Routes, Route } from "react-router-dom";  // ✅ No Router here
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 
 import Header from "./Header";
 import Home from "../Pages/Home";
@@ -28,15 +26,12 @@ import WaridiHouse from "../Pages/Subprojects/WaridiHouse";
 function App() {
   return (
     <Router>
-      <Header /> {/* Navbar remains visible on all pages */}
+      <Header />
       <Routes>
-        {/* ✅ Default route ensures the homepage loads first */}
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/skills" element={<Team />} />
         <Route path="/about_us" element={<AboutUs />} />
-
-        {/* ✅ Routes for individual projects */}
         <Route path="/projects/bungalow-nyari" element={<BungalowNyari />} />
         <Route path="/projects/church-chumvi" element={<ChurchChumvi />} />
         <Route path="/projects/executive-flats-city-park" element={<ExecutiveFlatsCityPark />} />
@@ -51,8 +46,7 @@ function App() {
         <Route path="/projects/waridi-house" element={<WaridiHouse />} />
       </Routes>
       <Footer />
-      </Router>
-    
+    </Router>
   );
 }
 
